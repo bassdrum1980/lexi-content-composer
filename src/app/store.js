@@ -2,6 +2,7 @@ import logger from "redux-logger";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { llmApi } from "../services/llmApi";
 import chatReducer from "../features/chat/chatSlice";
+import articleReducer from "../features/article/articleSlice";
 import { persistMiddleware } from "../middleware/persistMiddleware";
 import { loadState } from "../utils/local-storage";
 
@@ -15,6 +16,7 @@ if (import.meta.env.MODE === "development") {
 const rootReducer = combineReducers({
   [llmApi.reducerPath]: llmApi.reducer,
   chat: chatReducer,
+  article: articleReducer,
 });
 
 export const store = configureStore({

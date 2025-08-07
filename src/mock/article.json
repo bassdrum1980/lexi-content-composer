@@ -1,0 +1,146 @@
+{
+  "article_title": "Understanding the Zero Conditional in English Grammar",
+  "summary": "The zero conditional is used to express general truths, scientific facts, and situations that are always true when certain conditions are met. This article explains its structure, usage, and how it differs from other conditionals.",
+  "sections": [
+    {
+      "section_title": "What Is the Zero Conditional?",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The zero conditional is a type of conditional sentence used to talk about things that are always true when the condition is met. These are not hypothetical or future situations, but rather real facts or laws of nature."
+        },
+        {
+          "type": "list",
+          "list_type": "unordered",
+          "items": [
+            "Used for general truths",
+            "Used for scientific facts",
+            "Describes routines or rules"
+          ]
+        },
+        {
+          "type": "note",
+          "icon": "💡",
+          "text": "The zero conditional is often used in instructions, rules, and scientific writing."
+        }
+      ]
+    },
+    {
+      "section_title": "Structure of the Zero Conditional",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The zero conditional has a fixed structure using the simple present tense in both the 'if' clause and the main clause:"
+        },
+        {
+          "type": "header",
+          "level": 3,
+          "text": "Structure:"
+        },
+        {
+          "type": "paragraph",
+          "text": "If + present simple, present simple"
+        },
+        {
+          "type": "list",
+          "list_type": "unordered",
+          "items": [
+            "If water reaches 100°C, it boils.",
+            "If you mix red and blue, you get purple.",
+            "If people eat too much, they gain weight."
+          ]
+        },
+        {
+          "type": "note",
+          "icon": "🔁",
+          "text": "You can reverse the order: 'It boils if water reaches 100°C.'"
+        }
+      ]
+    },
+    {
+      "section_title": "Usage of the Zero Conditional",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The zero conditional is used when the result of the condition is always true. It is not about what might happen, but about what always happens under certain conditions."
+        },
+        {
+          "type": "list",
+          "list_type": "unordered",
+          "items": [
+            "Scientific facts: 'If you heat ice, it melts.'",
+            "General truths: 'If you don’t water plants, they die.'",
+            "Rules and instructions: 'If the light is red, you stop.'",
+            "Habits: 'If she works late, she feels tired the next day.'"
+          ]
+        }
+      ]
+    },
+    {
+      "section_title": "Common Errors with the Zero Conditional",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Learners often confuse the zero conditional with other conditionals or use incorrect tenses. Here are some typical mistakes to avoid:"
+        },
+        {
+          "type": "list",
+          "list_type": "unordered",
+          "items": [
+            "❌ If it rains, I will get wet. ✅ If it rains, I get wet. (Zero vs. First conditional)",
+            "❌ If water reached 100°C, it boils. ✅ If water reaches 100°C, it boils. (Incorrect tense)",
+            "❌ If he eat too much, he feels sick. ✅ If he eats too much, he feels sick. (Subject-verb agreement)"
+          ]
+        },
+        {
+          "type": "note",
+          "icon": "⚠️",
+          "text": "Avoid using future tense ('will') in the result clause of the zero conditional."
+        }
+      ]
+    },
+    {
+      "section_title": "Zero Conditional vs. Other Conditionals",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The zero conditional is one of several conditional forms in English. Here's how it compares to others:"
+        },
+        {
+          "type": "list",
+          "list_type": "unordered",
+          "items": [
+            "Zero Conditional: Real facts — 'If you freeze water, it turns to ice.'",
+            "First Conditional: Possible future — 'If it rains, I will stay home.'",
+            "Second Conditional: Unreal/hypothetical — 'If I won the lottery, I would travel the world.'",
+            "Third Conditional: Past unreal — 'If I had studied, I would have passed.'"
+          ]
+        },
+        {
+          "type": "note",
+          "icon": "🔍",
+          "text": "The key difference is that the zero conditional refers to situations that are always true, not imagined or hypothetical."
+        }
+      ]
+    },
+    {
+      "section_title": "Examples in Context",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Here are some real-life examples of the zero conditional used in different contexts:"
+        },
+        {
+          "type": "list",
+          "list_type": "unordered",
+          "items": [
+            "Science: 'If you add salt to water, it boils at a higher temperature.'",
+            "Health: 'If you don’t sleep enough, you feel tired.'",
+            "Daily routine: 'If I drink coffee late, I can’t sleep.'",
+            "Instructions: 'If the machine stops, press the red button.'"
+          ]
+        }
+      ]
+    }
+  ]
+}

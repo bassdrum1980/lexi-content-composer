@@ -30,6 +30,7 @@
  * @apiBody {String} prompt
  */
 import { createServer } from "miragejs";
+import mockArticle from "./article.json";
 
 export function makeServer() {
   createServer({
@@ -58,7 +59,12 @@ export function makeServer() {
 
       this.post("prompts/", (schema, request) => {
         let attrs = JSON.parse(request.requestBody);
-        return { response: `Echo: ${attrs.prompt}` };
+
+        // For now I return all mock data with any response
+        return {
+          response: `Echo: ${attrs.prompt}`,
+          article: mockArticle,
+        };
       });
     },
   });

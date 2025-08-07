@@ -1,5 +1,5 @@
 import { ArrowUpIcon } from "@heroicons/react/24/solid";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 
 export function PromptForm({ onSubmit, isLoading }) {
   const inputRef = useRef(null);
@@ -10,11 +10,18 @@ export function PromptForm({ onSubmit, isLoading }) {
     if (prompt.length > 0) {
       onSubmit(prompt);
       inputRef.current.value = "";
+      inputRef.current.focus();
     }
   };
 
+  useEffect(() => {
+    if (inputRef.current && isLoading === false) {
+      inputRef.current.focus();
+    }
+  }, [isLoading]);
+
   return (
-    <div className="flex items-center w-full max-w-md rounded-full border border-gray-300 px-4 py-2 shadow-sm focus-within:ring-2 focus-within:ring-black bg-white">
+    <div className="flex items-center mx-4 rounded-full border border-gray-300 px-4 py-2 shadow-sm focus-within:ring-2 focus-within:ring-black bg-white">
       <form action="#" onSubmit={handleSubmit} className="flex w-full">
         <input
           type="text"

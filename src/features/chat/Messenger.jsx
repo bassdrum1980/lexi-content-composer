@@ -1,27 +1,18 @@
-import { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addMessage } from "./chatSlice";
 import { useSendPromptMutation } from "../../services/llmApi";
+import { PromptForm } from "../../components/PromptForm";
+import { ChatHistory } from "../../components/ChatHistory/chat-history";
 
 function Messenger() {
   const dispatch = useDispatch();
   const messages = useSelector((state) => state.chat.messages);
-  const inputRef = useRef(null);
   const [sendPrompt, { isLoading, isError }] = useSendPromptMutation();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const prompt = inputRef.current.value.trim();
-    if (prompt.length > 0) {
-      dispatch(addMessage({ type: "request", text: prompt }));
-      sendPrompt(prompt);
-      inputRef.current.value = "";
-    }
+  const handleSubmit = (prompt) => {
+    dispatch(addMessage({ type: "request", text: prompt }));
+    sendPrompt(prompt);
   };
-
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
 
   if (isError) {
     return <div>Error occurred while fetching response.</div>;
@@ -30,16 +21,8 @@ function Messenger() {
   return (
     <div>
       <h1>Messenger Component</h1>
-      <form action="#" onSubmit={handleSubmit}>
-        <input type="text" ref={inputRef} />
-      </form>
-      <ul>
-        {messages.map((message) => (
-          <li key={message.id} className={message.type}>
-            {message.text}
-          </li>
-        ))}
-      </ul>
+      <ChatHistory messages={messages} />
+      <PromptForm onSubmit={handleSubmit} isLoading={isLoading} />
     </div>
   );
 }

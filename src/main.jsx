@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import { store } from "./app/store.js";
 import { AppRoutes } from "./routes/AppRoutes.jsx";
 import { makeServer } from "./services/mockServer.js";
+import "./index.css";
 
 // Start the mock server
 makeServer();

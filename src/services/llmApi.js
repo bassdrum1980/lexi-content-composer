@@ -4,7 +4,7 @@ export const llmApi = createApi({
   reducerPath: "llmApi",
   baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_MOCK_SERVER_URL }),
   endpoints: (builder) => ({
-    getLlmResponse: builder.mutation({
+    sendPrompt: builder.mutation({
       query: (prompt) => ({
         url: "prompts",
         method: "POST",
@@ -14,4 +14,4 @@ export const llmApi = createApi({
   }),
 });
 
-export const { useGetLlmResponseMutation } = llmApi;
+export const { useSendPromptMutation } = llmApi;

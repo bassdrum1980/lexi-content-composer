@@ -22,7 +22,7 @@ const chatSlice = createSlice({
     // no need for data manipulation of incoming messages on the component side for now,
     // thus keeping response handling logic decoupled from the component
     builder.addMatcher(
-      llmApi.endpoints.getLlmResponse.matchFulfilled,
+      llmApi.endpoints.sendPrompt.matchFulfilled,
       (state, action) => {
         chatSlice.caseReducers.addMessage(state, {
           payload: { text: action.payload.response, type: "response" },

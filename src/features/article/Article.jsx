@@ -6,7 +6,7 @@ export default function Article() {
   if (!article) return null;
 
   return (
-    <article className="p-6 max-w-3xl mx-auto bg-white rounded-xl shadow-sm text-gray-900">
+    <article className="p-6 bg-white rounded-xl shadow-sm text-gray-900">
       <h1 className="text-2xl font-bold mb-2">{article.article_title}</h1>
       <p className="text-gray-700 mb-6">{article.summary}</p>
 

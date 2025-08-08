@@ -14,10 +14,7 @@ export const loadState = () => {
 export const saveState = (state) => {
   try {
     const stateToSave = {
-      chat: state.chat,
-      // article: state.article,
-      // rules: state.rules,
-      // cards: state.cards,
+      ...state,
     };
     const serializedState = JSON.stringify(stateToSave);
     localStorage.setItem("appState", serializedState);

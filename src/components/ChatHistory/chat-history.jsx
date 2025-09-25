@@ -10,7 +10,7 @@ export function ChatHistory({ messages }) {
   }, [messages]);
 
   return (
-    <div className="flex flex-col gap-3 p-4 overflow-y-auto max-h-[60vh]">
+    <div className="flex flex-col gap-3 overflow-y-auto">
       {messages.map((msg) => (
         <div
           key={msg.id}

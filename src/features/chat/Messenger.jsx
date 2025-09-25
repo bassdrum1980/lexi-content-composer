@@ -19,7 +19,7 @@ function Messenger() {
   }
 
   return (
-    <div>
+    <div className="p-6">
       <h1>Messenger Component</h1>
       <ChatHistory messages={messages} />
       <PromptForm onSubmit={handleSubmit} isLoading={isLoading} />

@@ -7,13 +7,25 @@ function App() {
   const article = useSelector((state) => state.article.article);
 
   return (
-    <>
+    <div className="h-screen max-h-screen flex flex-col">
       <TopBar />
-      <div className="flex h-screen">
-        {article && <Article />}
-        <Messenger />
+
+      <div className="flex-1 flex overflow-auto">
+        {/* Column 1 */}
+        <div className="flex-1 flex flex-col overflow-auto border-r">
+          {/* Replace with your content */}
+          {article && <Article />}
+        </div>
+        {/* Column 2 */}
+        <div className="flex-1 flex flex-col overflow-auto border-r">
+          <div className="p-4">Rules</div>
+        </div>
+        {/* Column 3 */}
+        <div className="flex-1 flex flex-col overflow-auto">
+          <Messenger />
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 

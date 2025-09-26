@@ -3,6 +3,7 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { llmApi } from "../services/llmApi";
 import chatReducer from "../features/chat/chatSlice";
 import articleReducer from "../features/article/articleSlice";
+import rulesReducer from "../features/rules/rulesSlice";
 import { persistMiddleware } from "../middleware/persistMiddleware";
 import { loadState } from "../utils/local-storage";
 
@@ -17,6 +18,7 @@ const rootReducer = combineReducers({
   [llmApi.reducerPath]: llmApi.reducer,
   chat: chatReducer,
   article: articleReducer,
+  rules: rulesReducer,
 });
 
 export const store = configureStore({

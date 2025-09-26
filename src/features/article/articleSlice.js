@@ -18,8 +18,8 @@ const articleSlice = createSlice({
     builder.addMatcher(
       llmApi.endpoints.sendPrompt.matchFulfilled,
       (state, action) => {
-        // Assuming the response contains the article data
-        // TODO: conditional logic to handle different types of responses
+        // For now I'm subscribed to '/prompts' endpoint
+        // Will have to change it to '/articles'
         articleSlice.caseReducers.setArticle(state, {
           payload: action.payload.article,
         });

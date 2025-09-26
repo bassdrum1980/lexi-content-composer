@@ -31,6 +31,7 @@
  */
 import { createServer } from "miragejs";
 import mockArticle from "./article.json";
+import mockRules from "./rules.json";
 
 export function makeServer() {
   createServer({
@@ -60,10 +61,13 @@ export function makeServer() {
       this.post("prompts/", (schema, request) => {
         let attrs = JSON.parse(request.requestBody);
 
-        // For now I return all mock data with any response
+        // For now I'm returning all mock data with any response
+        // I will have to keep some state of the conversation
+        // to hit different endpoints based on the prompt
         return {
           response: `Echo: ${attrs.prompt}`,
           article: mockArticle,
+          rules: mockRules,
         };
       });
     },

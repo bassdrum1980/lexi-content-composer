@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { renderContentBlock } from "./utils/render-block";
+import { renderContentBlock } from "../../utils/render-block";
 
 export default function Article() {
   const article = useSelector((state) => state.article.article);

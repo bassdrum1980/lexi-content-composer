@@ -7,6 +7,7 @@ export const persistMiddleware = (storeAPI) => (next) => (action) => {
   saveState({
     chat: state.chat,
     article: state.article,
+    rules: state.rules,
   });
 
   return result;

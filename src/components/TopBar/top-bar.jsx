@@ -1,5 +1,7 @@
 import { useDispatch } from "react-redux";
 import { resetMessages } from "../../features/chat/chatSlice";
+import { resetArticle } from "../../features/article/articleSlice";
+import { resetRules } from "../../features/rules/rulesSlice";
 
 export function TopBar() {
   const dispatch = useDispatch();
@@ -7,7 +9,8 @@ export function TopBar() {
   const handleStartOver = () => {
     if (window.confirm("Are you sure you want to start over?")) {
       dispatch(resetMessages());
-      // dispatch(resetArticles());
+      dispatch(resetArticle());
+      dispatch(resetRules());
     }
   };
 
